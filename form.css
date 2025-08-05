@@ -1,0 +1,99 @@
+/* Importing a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Basic setup and font styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form container for centering and background */
+.form-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form header styling */
+.my-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Styling for each form group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Styling for all input fields and textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows user to resize vertically */
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .my-form h2 {
+        font-size: 1.8rem;
+    }
+}
